@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista Estudiantil Plus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Revista+</div>
+            <ul class="menu">
+                <li><a href="https://www.uan.edu.co/" target="_blank">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Participa</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Bienvenidos a la Revista Estudiantil</h1>
+        <p>Explora noticias, cultura, ciencia y más desde la perspectiva estudiantil.</p>
+        <a href="#" class="btn">Publica tu artículo</a>
+    </section>
+
+    <section class="categorias">
+        <h2>Categorías</h2>
+        <div class="grid">
+            <div class="card dropdown-card" onclick="toggleDropdown(this)">
+                Académicas
+                <ul class="submenu-card">
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Investigación</a></li>
+                    <li><a href="#">Talleres</a></li>
+                </ul>
+            </div>
+            <div class="card dropdown-card" onclick="toggleDropdown(this)">
+                Cultura
+                <ul class="submenu-card">
+                    <li><a href="#">Arte</a></li>
+                    <li><a href="#">Música</a></li>
+                    <li><a href="#">Historia</a></li>
+                </ul>
+            </div>
+            <div class="card dropdown-card" onclick="toggleDropdown(this)">
+                Deporte
+                <ul class="submenu-card">
+                    <li><a href="#">Fútbol</a></li>
+                    <li><a href="#">Atletismo</a></li>
+                    <li><a href="#">Interfacultades</a></li>
+                </ul>
+            </div>
+            <div class="card dropdown-card" onclick="toggleDropdown(this)">
+                Entretenimiento
+                <ul class="submenu-card">
+                    <li><a href="#">Cine</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Juegos</a></li>
+                </ul>
+            </div>
+            <div class="card dropdown-card" onclick="toggleDropdown(this)">
+                Salud y Bienestar
+                <ul class="submenu-card">
+                    <li><a href="#">Consejos</a></li>
+                    <li><a href="#">Charlas</a></li>
+                    <li><a href="#">Ejercicio</a></li>
+                </ul>
+            </div>
+            <div class="card dropdown-card" onclick="toggleDropdown(this)">
+                Opinión y Debate
+                <ul class="submenu-card">
+                    <li><a href="#">Columna</a></li>
+                    <li><a href="#">Foros</a></li>
+                    <li><a href="#">Encuestas</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="articulos">
+        <h2>Últimos Artículos</h2>
+        <div class="grid">
+            <div class="articulo">
+                <img src="https://via.placeholder.com/300x150" alt="artículo 1">
+                <h3>Evento Académico Importante</h3>
+                <p>Publicado el 10 mayo - 3 min lectura</p>
+            </div>
+            <div class="articulo">
+                <img src="https://via.placeholder.com/300x150" alt="artículo 2">
+                <h3>Nuestra Semana Cultural</h3>
+                <p>Publicado el 8 mayo - 2 min lectura</p>
+            </div>
+            <div class="articulo">
+                <img src="https://via.placeholder.com/300x150" alt="artículo 3">
+                <h3>Consejos de Bienestar</h3>
+                <p>Publicado el 6 mayo - 4 min lectura</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="formulario">
+        <h2>Envía tu artículo</h2>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Tu artículo..." rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Redes Sociales</h4>
+                <p><a href="https://www.calameo.com/read/00455888198bca3ce2664" target="_blank">Facebook</a> | 
+                    <a href="https://www.instagram.com/revista_ineduval?igsh=bG90d2xzN3VrOHV2" target="_blank">Instagram</a> | 
+                    <a href="https://www.tiktok.com/@revista_estudiant?_t=ZS-8wJA6ZY60b1&_r=1" target="_blank">Tik Tok</a> 
+                    </p>
+            </div>
+            <div>
+                <h4 id="contacto">Contacto</h4>
+                <p>estudiantilrevista01@gmail.com<br>Valparaíso, Caquetá<br>Tel: 310-1234567</p>
+            </div>
+        </div>
+        <p class="copy">&copy; Revista Estudiantil INEDUVAL. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleDropdown(card) {
+            card.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
