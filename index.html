@@ -8,95 +8,108 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">Revista+</div>
-            <ul class="menu">
-                <li><a href="https://www.uan.edu.co/" target="_blank">Inicio</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Participa</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
+  <nav class="navbar">
+    <div class="logo">
+      <img src="ineduval.jpg" alt="Logo IE Valparaíso" class="nav-logo">
+    </div>
+    <div class="nav-right">
+      <img src="logo.jpg" alt="Logo revista" class="nav-logo">
+      <ul class="menu">
+        <li><a href="#">Redes Sociales</a></li>
+        <li><a href="#">Categorías</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
     <section class="hero">
-        <h1>Bienvenidos a la Revista Estudiantil</h1>
-        <p>Explora noticias, cultura, ciencia y más desde la perspectiva estudiantil.</p>
-        <a href="#" class="btn">Publica tu artículo</a>
+        <h1>Bienvenidos a la Revista Estudiantil INEDUVAL en la Web</h1>
+        <p>Creada por y para estudiantes, donde la creatividad, las ideas frescas y las voces de todos tienen un espacio. </p>
+        <p>Aquí encontrarán artículos, entrevistas, curiosidades, proyectos y mucho más, todo en un formato dinámico, corto y entretenido. </p>
+        <p>Este es un lugar para inspirarnos, compartir y conectar. ¡Exploren, participen y disfruten!.</p>
+        <div class="slider">
+        <img src="Bienvenida.jpg" alt="Slide 1">
+        <img src="1.jpg" alt="Slide 2">
+        <img src="2.jpg" alt="Slide 3">
+        <img src="3.jpg" alt="Slide 2">
+        <img src="4.jpg" alt="Slide 3">
+        <img src="5.jpg" alt="Slide 2">
+        <img src="6.jpg" alt="Slide 3">
+        <img src="7.jpg" alt="Slide 2">
+        <img src="8.jpg" alt="Slide 3">
+        <img src="9.jpg" alt="Slide 2">
+</div>
     </section>
-
     <section class="categorias">
-        <h2>Categorías</h2>
+        <h2 id="categorías">Categorías</h2>
         <div class="grid">
             <div class="card dropdown-card" onclick="toggleDropdown(this)">
-                Académicas
+                Académico
                 <ul class="submenu-card">
-                    <li><a href="#">Eventos</a></li>
-                    <li><a href="#">Investigación</a></li>
-                    <li><a href="#">Talleres</a></li>
-                </ul>
-            </div>
-            <div class="card dropdown-card" onclick="toggleDropdown(this)">
-                Cultura
-                <ul class="submenu-card">
-                    <li><a href="#">Arte</a></li>
-                    <li><a href="#">Música</a></li>
-                    <li><a href="#">Historia</a></li>
+                    <li><a href="#">Elección de personero y contralor</a></li>
+                    <li><a href="#">Rendición de cuentas</a></li>
+                    <li><a href="#">Día del idioma</a></li>
+                    <li><a href="#">Pre ICFES</a></li>
                 </ul>
             </div>
             <div class="card dropdown-card" onclick="toggleDropdown(this)">
                 Deporte
                 <ul class="submenu-card">
-                    <li><a href="#">Fútbol</a></li>
-                    <li><a href="#">Atletismo</a></li>
-                    <li><a href="#">Interfacultades</a></li>
+                    <li><a href="#">Interclases</a></li>
+                    <li><a href="#">Intercolegiados</a></li>
+                </ul>
+            </div>
+            <div class="card dropdown-card" onclick="toggleDropdown(this)">
+                Cultura
+                <ul class="submenu-card">
+                    <li><a href="#">Día de la mujer</a></li>
+                    <li><a href="#">Día del docente</a></li>
+                    <li><a href="#">Dia de la madre</a></li>
+                    <li><a href="#">Curso de fotografía</a></li>
                 </ul>
             </div>
             <div class="card dropdown-card" onclick="toggleDropdown(this)">
                 Entretenimiento
                 <ul class="submenu-card">
-                    <li><a href="#">Cine</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Juegos</a></li>
-                </ul>
-            </div>
-            <div class="card dropdown-card" onclick="toggleDropdown(this)">
-                Salud y Bienestar
-                <ul class="submenu-card">
-                    <li><a href="#">Consejos</a></li>
-                    <li><a href="#">Charlas</a></li>
-                    <li><a href="#">Ejercicio</a></li>
+                    <li><a href="#">Actividades lúdico-pedagógicas</a></li>
                 </ul>
             </div>
             <div class="card dropdown-card" onclick="toggleDropdown(this)">
                 Opinión y Debate
                 <ul class="submenu-card">
-                    <li><a href="#">Columna</a></li>
-                    <li><a href="#">Foros</a></li>
-                    <li><a href="#">Encuestas</a></li>
+                    <li><a href="#">Para expresarse</a></li>
+                </ul>
+            </div>
+            <div class="card dropdown-card" onclick="toggleDropdown(this)">
+                Bienestar y Salud
+                <ul class="submenu-card">
+                    <li><a href="#">Charlas educativas</a></li>
+                </ul>
+            </div>
+            <div class="card dropdown-card" onclick="toggleDropdown(this)">
+                Medioambiente
+                <ul class="submenu-card">
+                    <li><a href="#">Campañas</a></li>
                 </ul>
             </div>
         </div>
     </section>
 
     <section class="articulos">
-        <h2>Últimos Artículos</h2>
+        <h2>Enlaces de interés</h2>
         <div class="grid">
             <div class="articulo">
-                <img src="https://via.placeholder.com/300x150" alt="artículo 1">
-                <h3>Evento Académico Importante</h3>
-                <p>Publicado el 10 mayo - 3 min lectura</p>
+                <a href="https://boletines.institucioneducativavalparaiso.edu.co/" target="_blank" style="text-decoration: none; color: black; font-weight: bold;">
+                Plataforma de notas
+                </a>
             </div>
             <div class="articulo">
-                <img src="https://via.placeholder.com/300x150" alt="artículo 2">
-                <h3>Nuestra Semana Cultural</h3>
-                <p>Publicado el 8 mayo - 2 min lectura</p>
+                <img src="https://via.placeholder.com/300x150" alt="enlace 2">
+                <h3>2</h3>
             </div>
             <div class="articulo">
-                <img src="https://via.placeholder.com/300x150" alt="artículo 3">
-                <h3>Consejos de Bienestar</h3>
-                <p>Publicado el 6 mayo - 4 min lectura</p>
+                <img src="https://via.placeholder.com/300x150" alt="enlace 3">
+                <h3>3</h3>
             </div>
         </div>
     </section>
@@ -114,8 +127,8 @@
     <footer>
         <div class="footer-content">
             <div>
-                <h4>Redes Sociales</h4>
-                <p><a href="https://www.calameo.com/read/00455888198bca3ce2664" target="_blank">Facebook</a> | 
+                <h4 id="redes">Redes Sociales</h4>
+                <p><a href="#">Facebook</a> | 
                     <a href="https://www.instagram.com/revista_ineduval?igsh=bG90d2xzN3VrOHV2" target="_blank">Instagram</a> | 
                     <a href="https://www.tiktok.com/@revista_estudiant?_t=ZS-8wJA6ZY60b1&_r=1" target="_blank">Tik Tok</a> 
                     </p>
@@ -132,6 +145,24 @@
         function toggleDropdown(card) {
             card.classList.toggle("active");
         }
+    const slides = document.querySelectorAll('.slider img');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((img, i) => {
+            img.classList.remove('active');
+            if (i === index) img.classList.add('active');
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+    setInterval(nextSlide, 3000); // cambia cada 3 segundos
     </script>
 </body>
 </html>
+
